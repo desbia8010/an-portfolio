@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CV – Đoàn Minh Duy An</title>
+  <meta name="description" content="CV Đoàn Minh Duy An · Digital Marketing · Content & E-commerce">
+  <meta name="theme-color" content="#0D0B0A">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Playfair+Display:wght@800;900&display=swap">
+  <style>
+    :root {
+      --bg: #0D0B0A; --ink: #F4EDE4; --muted: #9C948B; --line: #2A2522; --an: #FFB547;
+      color-scheme: dark;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      min-height: 100vh; min-height: 100svh;
+      display: flex; align-items: center; justify-content: center;
+      padding: calc(24px + env(safe-area-inset-top, 0px)) 20px calc(24px + env(safe-area-inset-bottom, 0px));
+      background: radial-gradient(ellipse 80% 55% at 50% 30%, rgba(255, 181, 71, .12), transparent 70%), var(--bg);
+      color: var(--ink);
+      font: 400 16px/1.6 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: 100%; max-width: 420px; }
+    .mark { margin: 0 0 20px; font: 900 72px/.9 'Playfair Display', Georgia, serif; color: var(--an); letter-spacing: -.015em; text-shadow: 0 0 .25em rgba(255, 181, 71, .3); }
+    h1 { margin: 0 0 6px; font: 600 26px/1.25 'Be Vietnam Pro', system-ui, sans-serif; }
+    .role { margin: 0 0 36px; color: var(--muted); }
+    .prompt { margin: 0 0 12px; font: 500 12px/1.4 'Be Vietnam Pro', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .choices { display: grid; gap: 12px; }
+    a.lang {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      min-height: 64px; padding: 16px 20px; border-radius: 4px;
+      border: 1px solid rgba(244, 237, 228, .28); color: var(--ink);
+      font: 600 18px/1.2 'Be Vietnam Pro', system-ui, sans-serif; text-decoration: none;
+      transition: border-color .2s, box-shadow .3s, color .2s;
+    }
+    a.lang small { font-weight: 400; font-size: 14px; opacity: .75; }
+    a.lang.primary { background: var(--an); border-color: var(--an); color: #0D0B0A; }
+    a.lang:hover { border-color: var(--an); box-shadow: 0 0 28px rgba(255, 181, 71, .35); }
+    a.lang:not(.primary):hover { color: var(--an); }
+    a:focus-visible { outline: 2px solid var(--an); outline-offset: 3px; }
+    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    footer a { color: inherit; text-underline-offset: .2em; }
+    footer a:hover { color: var(--an); }
+    @media (prefers-reduced-motion: reduce) { a.lang { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="mark" aria-hidden="true">AN</p>
+    <h1>Đoàn Minh Duy An</h1>
+    <p class="role">Digital Marketing · Content &amp; E-commerce<br>Đại học Văn Lang</p>
+
+    <p class="prompt">Chọn ngôn ngữ / Choose a language</p>
+    <div class="choices">
+      <a class="lang primary" href="https://docs.google.com/document/d/16luBtcATUan5DWwoy1oNXAex9RAKNYK6ylWwuQuANXE/mobilebasic" target="_blank" rel="noopener">Tiếng Việt <small>Xem CV</small></a>
+      <a class="lang" href="https://docs.google.com/document/d/17Ov5HweAwzHO7zZL-vjjh9fTOyW0dAc0XdvLYPTFh2I/mobilebasic" target="_blank" rel="noopener">English <small>View CV</small></a>
+    </div>
+
+    <footer>
+      <a href="mailto:angeladoanminhduyan@gmail.com">angeladoanminhduyan@gmail.com</a><br>
+      <a href="../">Xem portfolio AN →</a>
+    </footer>
+  </main>
+</body>
+</html>

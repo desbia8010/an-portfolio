@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AN – Đoàn Minh Duy An · Digital Marketing Portfolio</title>
+  <meta name="description" content="Một series về An. Năm chương, chữ nào cũng có An ở trong.">
+  <meta name="theme-color" content="#0D0B0A">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Ảnh xem trước khi chia sẻ link (Zalo, Facebook, email).
+       Khi đã có tên miền, đổi 2 dòng og:image và og:url thành đường dẫn đầy đủ, ví dụ
+       https://ten-mien-cua-ban/og-image.png -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AN – Đoàn Minh Duy An · Digital Marketing Portfolio">
+  <meta property="og:description" content="Một series về An. Năm chương, chữ nào cũng có An ở trong.">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="">
+  <meta property="og:locale" content="vi_VN">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Playfair+Display:wght@700;800;900&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#muc-luc" data-t="ui.skip">Bỏ qua, tới mục lục</a>
+
+  <!-- Ánh sáng máy chiếu: tắt đèn, bật đèn -->
+  <div id="lights" aria-hidden="true"></div>
+  <div id="flash" aria-hidden="true"></div>
+
+  <!-- Chữ AN: ở giữa màn mở đầu, cuộn xuống thì bay lên góc trái thành logo -->
+  <div id="an-mark" aria-hidden="true"><span class="an3d__face">AN</span></div>
+  <div id="cursor" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="logo-hit" href="#an" data-t-aria="ui.home" aria-label="AN, về đầu trang"></a>
+
+    <div class="mbar" aria-live="polite">
+      <span class="mbar__label">Mở đầu</span>
+      <span class="mbar__track" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+    </div>
+
+    <nav class="topnav" aria-label="Menu">
+      <a href="#muc-luc" data-t="ui.toc">Mục lục</a>
+      <a href="#phu-luc" data-t="ui.appendix">Phụ lục</a>
+      <a href="#lien-he" data-t="ui.contact">Liên hệ</a>
+      <a href="#lien-he" class="topnav__cv" data-cv data-t="ui.cv">Tải CV</a>
+    </nav>
+
+    <div class="tools">
+      <button class="tool lang" type="button" data-lang-toggle data-t-aria="ui.lang" aria-label="Đổi ngôn ngữ">
+        <span data-l="vi">VI</span><span class="lang__sep">/</span><span data-l="en">EN</span>
+      </button>
+      <button class="tool sound" type="button" data-sound aria-pressed="false" data-t-aria="ui.soundOn" aria-label="Bật âm thanh">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path class="sound__on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="sound__off" d="M16 9.5l5 5m0-5l-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <button class="tool present-btn" type="button" data-present data-t="ui.present">Trình chiếu</button>
+    </div>
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-t-aria="ui.menu" aria-label="Mở menu">
+      <i></i><i></i><i></i>
+    </button>
+  </header>
+
+  <nav class="rail" id="rail" aria-label="Các chương" data-t-aria="ui.chapters"></nav>
+
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__nav" aria-label="Menu"></nav>
+  </div>
+
+  <main id="main">
+    <!-- Màn 1 · Mở đầu (chương AN) -->
+    <section class="screen hero" id="an" data-screen="an" aria-label="AN">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <h1 class="sr-only">AN – Đoàn Minh Duy An · Digital Marketing Portfolio</h1>
+      <div class="hero__inner">
+        <p class="hero__greet" data-t="hero.greet">Chào bạn. Ánh sáng bạn vừa thấy bắt đầu từ đây.</p>
+        <div class="hero__slot" aria-hidden="true"><span>AN</span></div>
+        <p class="hero__sub" data-t="hero.sub">Một series về An. Cảm hứng từ một chapter năm 2022.</p>
+        <div class="hero__ctas">
+          <button class="btn btn--an" type="button" data-video hidden>
+            <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M5 3.5v13l11-6.5z" fill="currentColor"/></svg>
+            <span data-t="hero.watch">Xem video CV</span>
+          </button>
+          <a class="btn btn--line" href="#muc-luc" data-t="hero.read">Đọc từng chương ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Màn 2 · Mục lục -->
+    <section class="screen toc" id="muc-luc" data-screen="muc-luc"></section>
+
+    <!-- Màn 3–7 · Năm chương -->
+    <section class="screen chapter" id="ban" data-screen="ban"></section>
+    <section class="screen chapter" id="lan" data-screen="lan"></section>
+    <section class="screen chapter" id="vang" data-screen="vang"></section>
+    <section class="screen chapter" id="toan" data-screen="toan"></section>
+    <section class="screen chapter" id="tan" data-screen="tan"></section>
+
+    <!-- Màn 8 · Phụ lục · Hồ sơ An -->
+    <section class="screen appendix" id="phu-luc" data-screen="phu-luc"></section>
+
+    <!-- Màn 9 · Chương _ AN -->
+    <section class="screen next" id="chuong-tiep" data-screen="chuong-tiep"></section>
+
+    <!-- Màn 10 · Liên hệ -->
+    <section class="screen contact" id="lien-he" data-screen="lien-he"></section>
+  </main>
+
+  <!-- Cửa sổ xem ảnh minh chứng -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Minh chứng" hidden>
+    <button class="x" type="button" data-close data-t-aria="ui.close" aria-label="Đóng"></button>
+    <div class="lightbox__stage"></div>
+    <div class="lightbox__bar">
+      <button class="lb-nav" type="button" data-lb="-1" data-t-aria="ui.prev" aria-label="Ảnh trước">←</button>
+      <p class="lightbox__cap"></p>
+      <span class="lightbox__count"></span>
+      <button class="lb-nav" type="button" data-lb="1" data-t-aria="ui.next" aria-label="Ảnh sau">→</button>
+    </div>
+  </div>
+
+  <!-- Cửa sổ chung: video CV, slide đồ án -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" hidden>
+    <button class="x" type="button" data-close data-t-aria="ui.close" aria-label="Đóng"></button>
+    <div class="modal__body"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">
+      <p>Website cần JavaScript để hiển thị đầy đủ.</p>
+      <p>Email: <a href="mailto:angeladoanminhduyan@gmail.com">angeladoanminhduyan@gmail.com</a> · Zalo: <a href="https://zalo.me/0888811311">0888811311</a></p>
+    </div>
+  </noscript>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
