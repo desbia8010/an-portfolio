@@ -11,12 +11,12 @@ window.AN_CONFIG = {
   zalo: '0888811311',
 
   // Tên miền đầy đủ khi có, ví dụ 'https://an-portfolio.vercel.app'
-  siteUrl: '',
+  siteUrl: 'https://an-portfolio-pi.vercel.app',
 
   images: {
     evidence: 'assets/img/evidence/',   // 1-1 … 1-7, 2-1 … 2-5, 3-1 … 3-4, 4-1 … 4-6, tan-1 … tan-4
     portrait: 'assets/img/portrait',    // ảnh chân dung tỷ lệ 4:5
-    qrCv: 'assets/img/qr-cv',           // mã QR quét để xem CV (màn Liên hệ, slide 9)
+    qrCv: 'assets/img/qr-cv-public',           // mã QR quét để xem CV (màn Liên hệ, slide 9)
     qr: 'assets/img/qr-website',        // mã QR dẫn về website
     covers: 'assets/img/projects/'      // ảnh bìa đồ án: imc, dmkt
   },
